@@ -3,23 +3,13 @@ import './App.css';
 import clevertap from 'clevertap-web-sdk';
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBxlcYq8Sp7zuE6J5E1tbprdFtUV-DXbUA",
-  authDomain: "androidclevertaptest.firebaseapp.com",
-  projectId: "androidclevertaptest",
-  storageBucket: "androidclevertaptest.appspot.com",
-  messagingSenderId: "540192587568",
-  appId: "1:540192587568:web:3eb5fea21d2364ddc3d2f5",
-  measurementId: "G-2K896CT56J"
-};
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
 clevertap.init('TEST-468-W87-546Z')
 clevertap.setLogLevel(3)
 
